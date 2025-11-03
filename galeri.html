@@ -1,0 +1,66 @@
+<!--
+File: galeri.html
+
+Penjelasan per bagian dan instruksi untuk mengedit:
+
+1) <!DOCTYPE html>
+   - Menyatakan dokumen ini adalah HTML5.
+
+2) <html> ... </html>
+   - Wadah utama dokumen.
+
+3) <head>
+   - Metadata dan gaya.
+   - <meta charset="UTF-8">: encoding karakter.
+   - <title>: teks di tab browser.
+   - <style>: CSS internal. Untuk mengganti gambar latar, ubah nilai background-image
+     dari 'path/to/your/image.jpg' ke lokasi file gambar Anda, misalnya 'images/bg.jpg'.
+     Contoh: background-image: url('images/bg.jpg');
+
+4) <body>
+   - Konten yang terlihat pengguna.
+   - <h1>: Judul halaman. Ubah teks, ukuran, atau gaya sesuai kebutuhan.
+   - <div> berisi <img>: Galeri sederhana.
+       * Ganti setiap atribut src dari 'path/to/your/photoX.jpg' ke path gambar Anda.
+       * Tambahkan atau hapus <img> untuk menambah/mengurangi foto.
+       * Gunakan atribut alt untuk deskripsi singkat (berguna untuk aksesibilitas).
+       * Untuk mengubah ukuran gambar, sesuaikan style width/height atau pindahkan styling ke CSS.
+   - Tombol navigasi: <button><a href="..."></a></button>
+       * Ubah href untuk mengarahkan ke halaman yang diinginkan.
+       * Disarankan: beri CSS pada <a> atau <button> agar tampilan konsisten.
+
+Contoh pengeditan cepat:
+- Menambahkan foto baru:
+  <img src="images/photo4.jpg" alt="Foto 4" style="width:200px; height:auto; margin:10px;">
+
+- Membuat galeri responsif (contoh singkat): pindahkan style inline ke CSS dan gunakan max-width:
+  img { max-width: 100%; height: auto; }
+
+Perhatian:
+- Komentar ini adalah panduan; jangan hapus struktur HTML utama di bawah kecuali Anda paham perubahan yang dibuat.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Galeri</title>
+        <style>
+            body {
+                background-image: url('path/to/your/image.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-weight:bold; font-size:30px;">Galeri Foto</h1>
+        <div>
+            <img src="path/to/your/photo1.jpg" alt="Foto 1" style="width:200px; height:auto; margin:10px;">
+            <img src="path/to/your/photo2.jpg" alt="Foto 2" style="width:200px; height:auto; margin:10px;">
+            <img src="path/to/your/photo3.jpg" alt="Foto 3" style="width:200px; height:auto; margin:10px;">
+        </div>
+        <button><a href="main.html">Halaman Utama</a></button>
+        <button><a href="biografi.html">Biografi</a></button>
+    </body>
+
+</html>

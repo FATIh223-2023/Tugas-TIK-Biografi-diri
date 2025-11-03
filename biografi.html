@@ -1,0 +1,88 @@
+<!--
+File: biografi.html
+
+Penjelasan per bagian dan instruksi untuk mengedit:
+
+1) <!DOCTYPE html>
+   - Menyatakan dokumen ini adalah HTML5.
+
+2) <html> ... </html>
+   - Wadah utama keseluruhan dokumen.
+
+3) <head>
+   - Berisi metadata dan CSS internal.
+   - <meta charset="UTF-8">: Mengatur encoding karakter ke UTF-8.
+   - <title>: Teks yang muncul di tab browser.
+   - <style>: CSS untuk styling halaman.
+     * background-image: Ganti 'path/to/your/image.jpg' dengan lokasi file gambar yang ingin dijadikan latar.
+       Contoh: background-image: url('images/background.jpg');
+     * background-size: cover; membuat gambar menutupi seluruh layar.
+     * background-repeat: no-repeat; mencegah pengulangan gambar.
+
+4) <body>
+   - Bagian utama yang ditampilkan pengguna.
+   - <h1>: Judul halaman. Ubah teks, ukuran, dan gaya sesuai kebutuhan.
+   - <table>: Struktur data biografi.
+       - Setiap <tr> adalah baris; kolom ketiga saat ini berisi placeholder ("Isi dengan ...").
+       - Untuk mengisi data, ganti teks placeholder dengan informasi Anda.
+       - Untuk menambah field baru, tambahkan baris baru:
+         <tr>
+             <td>Label</td>
+             <td>:</td>
+             <td>Isi</td>
+         </tr>
+   - <button><a href="...">...</a></button>: Tombol navigasi.
+       - Ubah atribut href untuk mengarahkan ke halaman lain (misal: 'kontak.html').
+
+Tips dan contoh cepat:
+- Mengganti gambar latar: letakkan gambar di folder project (mis. 'images/background.jpg') lalu ubah CSS:
+  background-image: url('images/background.jpg');
+
+- Menambahkan tombol "Kontak":
+  <button><a href="kontak.html">Kontak</a></button>
+
+Perhatian singkat:
+- Komentar ini hanya untuk membantu pengeditan; jangan hapus bagian HTML utama di bawah kecuali Anda paham struktur.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Biografi Diri</title>
+        <style>
+            body {
+                background-image: url('path/to/your/image.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-weight:bold; font-size:30px;">Biografi Diri</h1>
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>Isi dengan namamu!</td>
+            </tr>
+            <tr>
+                <td>Tempat, Tanggal Lahir</td>
+                <td>:</td>
+                <td>isi dengan tempat dan tanggal lahirmu!</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>isi dengan alamat rumahmu!</td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>Isi dengan hobimu!</td>
+            </tr>
+        </table>
+
+        <button><a href="main.html">Halaman Utama</a></button>
+        <button><a href="galeri.html">Galeri</a></button>
+    </body>
+</html>
